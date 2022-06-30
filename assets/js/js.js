@@ -46,9 +46,9 @@ auditTime();
 
 
 // when clear schedule button is clicked all 
-$(".clearSchedule").on("click", function () {
-  $("description").value("");
+$("#clearSchedule").on("click", function () {
   localStorage.clear();
+  window.location.reload();
 })
 
 

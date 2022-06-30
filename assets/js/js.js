@@ -6,11 +6,11 @@ $("#currentDay").html(today);
 
 // save button 
 
-$("#saveBtn").click(function() {
+$(".saveBtn").on('click', function() {
   var task = $(this).parent().attr('id');
   var clock = $(this).siblings('.description').val();
   localStorage.setItem(task,clock);
- 
+ console.log('clicked')
 })
 
 // function that will audit time and color time windows differently for past, present and future
@@ -43,10 +43,7 @@ function auditTime() {
 // function that will run to audit time so colors (past/present/future) are showing 
 auditTime();
 
-// refresh pages automatically so time windows colors are up to date without user having to refresh it
-setTimeout(function(){
-  window.location.reload(1);
-}, 60000);
+
 
 // when clear schedule button is clicked all 
 $(".clearSchedule").on("click", function () {
@@ -57,7 +54,7 @@ $(".clearSchedule").on("click", function () {
 
 // Retrieves item from local storage if any
 // getItem method returns the value of the key name that’s passed to it
-$("#hour7 .description").val(localStorage.getItem("hour7"));
+$("#7 .description").val(localStorage.getItem("7"));
 $("#hour8 .description").val(localStorage.getItem("hour8"));
 $("#hour9 .description").val(localStorage.getItem("hour9"));
 $("#hour10 .description").val(localStorage.getItem("hour10"));

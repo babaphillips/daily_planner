@@ -17,12 +17,13 @@ $(".saveBtn").on('click', function() {
 function auditTime() {
   //get current hours from 
   var timeNow = moment().hour();
+
 // jQuery uses $ to select the div with class time-window and will loop this function over time windows
-  $(".time-window").each(function () {
+  $(".time-block").each(function () {
     // timeWindow variable where we get the id hour with $jQuery
-    var timeWindow = $(this).attr("id").split("hour")[1];
+    var timeWindow = parseInt($(this).attr("id"));
 // if the current time equals the time in the window, color with red
-    if (timeNow == timeWindow) {
+    if (timeNow === timeWindow) {
       $(this).removeClass("past");
       $(this).removeClass("future");
       $(this).addClass("present");

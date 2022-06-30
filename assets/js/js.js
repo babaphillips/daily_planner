@@ -56,12 +56,12 @@ $("#clearSchedule").on("click", function () {
 // Retrieves item from local storage if any
 // getItem method returns the value of the key name that’s passed to it
 $("#7 .description").val(localStorage.getItem("7"));
-$("#hour8 .description").val(localStorage.getItem("hour8"));
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour10 .description").val(localStorage.getItem("hour10"));
-$("#hour11 .description").val(localStorage.getItem("hour11"));
-$("#hour12 .description").val(localStorage.getItem("hour12"));
-$("#hour13.description").val(localStorage.getItem("hour13"));
-$("#hour14 .description").val(localStorage.getItem("hour14"));
-$("#hour15 .description").val(localStorage.getItem("hour15"));
+$("#8 .description").val(localStorage.getItem("8"));
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13.description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
 
